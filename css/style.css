@@ -16,13 +16,12 @@
     top: 0;
     left: 0;
     z-index: -1;
-    background-color: var(--deep-navy-blue);
 }
 
 /* General Styles */
 body {
     font-family: 'Inter', sans-serif;
-    background-color: transparent;
+    background-color: var(--deep-navy-blue);
     color: var(--dark-grey);
     margin: 0;
     padding: 0;
@@ -97,8 +96,6 @@ nav ul li a:hover {
 /* Main Content */
 main {
     padding: 120px 2rem 2rem;
-    background-color: var(--light-grey);
-    margin: 0 1rem;
     border-radius: 10px;
 }
 
@@ -127,13 +124,13 @@ section:last-of-type {
 
 #hero h1 {
     font-size: 2.5rem;
-    color: var(--deep-navy-blue);
+    color: var(--white);
     margin-bottom: 1rem;
 }
 
 #hero p {
     font-size: 1.2rem;
-    color: var(--dark-grey);
+    color: var(--light-grey);
     margin-bottom: 2rem;
     max-width: 600px;
     margin-left: auto;
@@ -162,7 +159,7 @@ section:last-of-type {
 
 /* Other styles will be updated as needed */
 .card {
-    background-color: var(--white);
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -171,6 +168,13 @@ section:last-of-type {
 
 .card:hover {
     transform: translateY(-5px);
+}
+
+.content-section {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 4rem;
+    margin-bottom: 2rem;
 }
 
 .about-image img {
