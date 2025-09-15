@@ -1,19 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Inter:wght@400;500;700&display=swap');
 
 :root {
-    --deep-navy-blue: #1E293B;
-    --electric-blue: #3B82F6;
-    --accent-green: #10B981;
+    --deep-blue: #1E293B;
+    --gold-accent: #D4AF37;
     --light-grey: #F9FAFB;
     --white: #ffffff;
-    --dark-grey: #D1D5DB;
+    --dark-grey: #333;
 }
 
 /* General Styles */
 body {
     font-family: 'Inter', sans-serif;
     background-color: var(--light-grey);
-    color: #333;
+    color: var(--dark-grey);
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -21,22 +20,22 @@ body {
 
 h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
-    color: var(--deep-navy-blue);
+    color: var(--deep-blue);
 }
 
 a {
-    color: var(--electric-blue);
+    color: var(--gold-accent);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: var(--accent-green);
+    color: var(--deep-blue);
 }
 
 /* Header and Navigation */
 header {
-    background-color: var(--deep-navy-blue);
+    background-color: var(--deep-blue);
     padding: 1rem 2rem;
     position: fixed;
     width: 100%;
@@ -66,7 +65,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: var(--electric-blue);
+    color: var(--gold-accent);
 }
 
 /* Hamburger Menu for Mobile */
@@ -86,12 +85,20 @@ nav ul li a:hover {
 
 /* Main Content */
 main {
-    padding: 100px 2rem 2rem;
+    padding: 120px 2rem 2rem;
 }
 
 section {
-    padding: 4rem 0;
-    border-bottom: 1px solid #ddd;
+    padding: 6rem 2rem;
+    border-bottom: 1px solid #eee;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 section:last-of-type {
@@ -101,62 +108,49 @@ section:last-of-type {
 /* Hero Section */
 #hero {
     text-align: center;
-    padding: 6rem 0;
+    padding: 8rem 2rem;
 }
 
 #hero h1 {
-    font-size: 3rem;
-    color: var(--deep-navy-blue);
-    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+    color: var(--deep-blue);
+    margin-bottom: 1rem;
 }
 
 #hero p {
     font-size: 1.2rem;
-    color: var(--electric-blue);
+    color: var(--dark-grey);
     margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Buttons */
 .btn {
-    background-color: var(--electric-blue);
+    background-color: var(--gold-accent);
     color: var(--white);
-    padding: 0.8rem 1.5rem;
+    padding: 1rem 2rem;
     border-radius: 5px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     transition: background-color 0.3s ease;
-    border: 1px solid var(--electric-blue);
+    border: 1px solid var(--gold-accent);
 }
 
 .btn:hover {
-    background-color: var(--accent-green);
-    border-color: var(--accent-green);
+    background-color: var(--deep-blue);
+    border-color: var(--deep-blue);
     color: var(--white);
 }
 
-.btn.secondary {
-    background-color: transparent;
-    color: var(--electric-blue);
-}
-
-.btn.secondary:hover {
-    background-color: var(--electric-blue);
-    color: var(--white);
-}
-
-/* Project Cards */
-.project-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
+/* Other styles will be updated as needed */
 .card {
     background-color: var(--white);
     padding: 2rem;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
     transition: transform 0.3s ease;
 }
 
@@ -164,109 +158,21 @@ section:last-of-type {
     transform: translateY(-5px);
 }
 
-.card h3 {
-    margin-top: 0;
-}
-
-/* About Page */
-.about-content {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-}
-
-.about-text {
-    flex: 2;
-}
-
-.about-image {
-    flex: 1;
-    text-align: center;
-}
-
 .about-image img {
-    max-width: 100%;
-    border-radius: 50%;
-    border: 5px solid var(--electric-blue);
-}
-
-@media (max-width: 768px) {
-    .about-content {
-        flex-direction: column;
-    }
-}
-
-/* Skills Page */
-.skills-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-}
-
-.skill-item {
-    margin-bottom: 1.5rem;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.skill-icon {
-    font-size: 1.5rem;
-    color: var(--electric-blue);
-}
-
-.skill-name {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: 500;
-}
-
-.skill-level {
-    background-color: #e0e0e0;
-    border-radius: 5px;
-    height: 10px;
+    border: 5px solid var(--gold-accent);
 }
 
 .level-bar {
-    background-color: var(--electric-blue);
-    height: 100%;
-    border-radius: 5px;
+    background-color: var(--gold-accent);
 }
 
 .skill-badge {
-    display: inline-block;
-    background-color: var(--accent-green);
+    background-color: var(--deep-blue);
     color: var(--white);
     padding: 0.5rem 1rem;
     border-radius: 20px;
     margin: 0.5rem;
-}
-
-@media (max-width: 768px) {
-    .skills-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* Experience Page */
-.experience-cards {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-}
-
-.experience-org, .experience-date {
-    font-style: italic;
-    color: #555;
-}
-
-/* Projects Page */
-.project-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
-    margin-bottom: 1rem;
+    display: inline-block;
 }
 
 /* Contact Page */
@@ -276,6 +182,21 @@ section:last-of-type {
 
 .contact-info p {
     margin: 0.5rem 0;
+}
+
+.social-links {
+    margin-top: 1rem;
+}
+
+.social-icon {
+    font-size: 2rem;
+    margin: 0 0.5rem;
+    color: var(--deep-blue);
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: var(--gold-accent);
 }
 
 #contact-form .form-group {
@@ -297,7 +218,7 @@ section:last-of-type {
 
 /* Footer */
 footer {
-    background-color: var(--deep-navy-blue);
+    background-color: var(--deep-blue);
     color: var(--white);
     text-align: center;
     padding: 2rem 0;
@@ -312,7 +233,7 @@ footer {
     nav ul {
         display: none;
         flex-direction: column;
-        background-color: var(--deep-navy-blue);
+        background-color: var(--deep-blue);
         position: absolute;
         top: 60px;
         left: 0;
@@ -346,6 +267,10 @@ footer {
     }
 
     #hero h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 4rem 1rem;
     }
 }

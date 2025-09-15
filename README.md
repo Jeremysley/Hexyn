@@ -7,10 +7,8 @@ This is a modern, professional portfolio website for Hensley Ukah, an AI and sof
 The website is designed to showcase Hensley's skills, projects, and experience in a clean, minimalist, and mobile-first design. It includes the following pages:
 -   Homepage
 -   About
--   Skills
--   Projects
--   Experience
--   Blog
+-   Skills & Projects
+-   Insights
 -   Contact
 
 ## How to View
@@ -25,5 +23,5 @@ To view the website, simply open the `index.html` file in your web browser. No s
 
 ## Design
 
--   **Color Palette:** Deep Navy Blue, Electric Blue, Emerald Green, Light Grey, White
+-   **Color Palette:** Deep Blue & Gold
 -   **Fonts:** Montserrat, Inter
