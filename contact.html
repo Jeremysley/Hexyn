@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Hensley Ukah</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="overlay"></div>
+    <video id="anime-bg" autoplay muted loop playsinline>
+      <source src="assets/neon-tokyo.mp4" type="video/mp4">
+    </video>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills-projects.html">Skills & Projects</a></li>
+                <li><a href="insights.html">Insights</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contact" class="section-card">
+            <h1>Contact Me</h1>
+            <div class="contact-info">
+                <p><strong>Email:</strong> <a href="mailto:chinonsohensley@gmail.com">chinonsohensley@gmail.com</a></p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/hensley-ukah" target="_blank" class="social-icon">[in]</a>
+                    <a href="https://github.com/jeremysley" target="_blank" class="social-icon">[gh]</a>
+                </div>
+            </div>
+            <p>If you'd like to get in touch, please fill out the form below. I'm always open to discussing new projects, creative ideas, or opportunities to collaborate.</p>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Hensley Ukah</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
