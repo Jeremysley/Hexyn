@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Inter:wght@400;500;700&display=swap');
 
 :root {
-    --deep-blue: #1E293B;
-    --gold-accent: #D4AF37;
+    --deep-navy-blue: #1E293B;
+    --electric-blue: #3B82F6;
+    --emerald-green: #10B981;
     --light-grey: #F9FAFB;
     --white: #ffffff;
     --dark-grey: #333;
@@ -15,7 +16,7 @@
     top: 0;
     left: 0;
     z-index: -1;
-    background-color: var(--deep-blue);
+    background-color: var(--deep-navy-blue);
 }
 
 /* General Styles */
@@ -30,22 +31,22 @@ body {
 
 h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
-    color: var(--deep-blue);
+    color: var(--deep-navy-blue);
 }
 
 a {
-    color: var(--gold-accent);
+    color: var(--electric-blue);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: var(--deep-blue);
+    color: var(--emerald-green);
 }
 
 /* Header and Navigation */
 header {
-    background-color: var(--deep-blue);
+    background-color: var(--deep-navy-blue);
     padding: 1rem 2rem;
     position: fixed;
     width: 100%;
@@ -75,7 +76,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: var(--gold-accent);
+    color: var(--electric-blue);
 }
 
 /* Hamburger Menu for Mobile */
@@ -126,7 +127,7 @@ section:last-of-type {
 
 #hero h1 {
     font-size: 2.5rem;
-    color: var(--deep-blue);
+    color: var(--deep-navy-blue);
     margin-bottom: 1rem;
 }
 
@@ -141,7 +142,7 @@ section:last-of-type {
 
 /* Buttons */
 .btn {
-    background-color: var(--gold-accent);
+    background-color: var(--electric-blue);
     color: var(--white);
     padding: 1rem 2rem;
     border-radius: 5px;
@@ -149,13 +150,13 @@ section:last-of-type {
     font-weight: 700;
     text-transform: uppercase;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid var(--gold-accent);
+    border: 1px solid var(--electric-blue);
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .btn:hover {
-    background-color: var(--deep-blue);
-    border-color: var(--deep-blue);
+    background-color: var(--emerald-green);
+    border-color: var(--emerald-green);
     color: var(--white);
 }
 
@@ -173,15 +174,15 @@ section:last-of-type {
 }
 
 .about-image img {
-    border: 5px solid var(--gold-accent);
+    border: 5px solid var(--electric-blue);
 }
 
 .level-bar {
-    background-color: var(--gold-accent);
+    background-color: var(--electric-blue);
 }
 
 .skill-badge {
-    background-color: var(--deep-blue);
+    background-color: var(--deep-navy-blue);
     color: var(--white);
     padding: 0.5rem 1rem;
     border-radius: 20px;
@@ -205,12 +206,12 @@ section:last-of-type {
 .social-icon {
     font-size: 2rem;
     margin: 0 0.5rem;
-    color: var(--deep-blue);
+    color: var(--deep-navy-blue);
     text-decoration: none;
 }
 
 .social-icon:hover {
-    color: var(--gold-accent);
+    color: var(--electric-blue);
 }
 
 #contact-form .form-group {
@@ -232,7 +233,7 @@ section:last-of-type {
 
 /* Footer */
 footer {
-    background-color: var(--deep-blue);
+    background-color: var(--deep-navy-blue);
     color: var(--white);
     text-align: center;
     padding: 2rem 0;
@@ -247,7 +248,7 @@ footer {
     nav ul {
         display: none;
         flex-direction: column;
-        background-color: var(--deep-blue);
+        background-color: var(--deep-navy-blue);
         position: absolute;
         top: 60px;
         left: 0;

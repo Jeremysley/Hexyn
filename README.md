@@ -23,5 +23,5 @@ To view the website, simply open the `index.html` file in your web browser. No s
 
 ## Design
 
--   **Color Palette:** Deep Blue & Gold
+-   **Color Palette:** Deep Navy, Electric Blue, Emerald Green, White / Light Grey
 -   **Fonts:** Montserrat, Inter
