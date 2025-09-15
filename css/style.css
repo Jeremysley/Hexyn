@@ -10,12 +10,20 @@
 }
 
 #particles-js {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.15;
+  pointer-events: none;
+  background: transparent;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 /* General Styles */
@@ -23,8 +31,6 @@ body {
     font-family: 'Inter', sans-serif;
     background-color: var(--deep-navy-blue);
     color: var(--dark-grey);
-    margin: 0;
-    padding: 0;
     line-height: 1.6;
 }
 
@@ -97,6 +103,7 @@ nav ul li a:hover {
 main {
     padding: 120px 2rem 2rem;
     border-radius: 10px;
+    background-color: var(--light-grey);
 }
 
 section {
@@ -159,22 +166,16 @@ section:last-of-type {
 
 /* Other styles will be updated as needed */
 .card {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(30, 41, 59, 0.75);
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: var(--light-grey);
 }
 
 .card:hover {
     transform: translateY(-5px);
-}
-
-.content-section {
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    padding: 4rem;
-    margin-bottom: 2rem;
 }
 
 .about-image img {
@@ -186,7 +187,7 @@ section:last-of-type {
 }
 
 .skill-badge {
-    background-color: var(--deep-navy-blue);
+    background-color: var(--electric-blue);
     color: var(--white);
     padding: 0.5rem 1rem;
     border-radius: 20px;
@@ -210,7 +211,7 @@ section:last-of-type {
 .social-icon {
     font-size: 2rem;
     margin: 0 0.5rem;
-    color: var(--deep-navy-blue);
+    color: var(--white);
     text-decoration: none;
 }
 
