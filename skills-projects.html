@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills & Projects - Hensley Ukah</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
 </head>
 <body>
     <div id="particles-js"></div>
@@ -21,7 +20,7 @@
         </nav>
     </header>
     <main>
-        <section id="skills">
+        <section id="skills" class="section-card">
             <h1>Technical Skills</h1>
             <div class="skills-container">
                 <div class="skill-badge">Python</div>
@@ -39,7 +38,7 @@
                 <div class="skill-badge">Collaboration</div>
             </div>
         </section>
-        <section id="experience">
+        <section id="experience" class="section-card">
             <h1>Experience & Roles</h1>
             <div class="experience-cards">
                 <div class="card">
@@ -60,24 +59,24 @@
                 </div>
             </div>
         </section>
-        <section id="projects">
+        <section id="projects" class="section-card">
             <h1>Projects</h1>
             <div class="project-cards">
                 <div class="card">
                     <img src="assets/project1.jpg" alt="LASU360 Super App" class="project-image">
                     <h3>LASU360 (Super App for Students)</h3>
                     <p><strong>My Role:</strong> Lead Developer</p>
-                    <p>A comprehensive super app designed to streamline the student experience at Lagos State University. The app includes features for course registration, event scheduling, social networking, and access to university resources.</p>
+                    <p>A comprehensive super app designed to streamline the student experience at Lagos State University.</p>
                     <p><strong>Technologies:</strong> React Native, Firebase, Node.js</p>
-                    <a href="https://github.com/jeremysley" class="btn" target="_blank">View on GitHub</a>
+                    <a href="https://github.com/jeremysley" class="btn-primary" target="_blank">View on GitHub</a>
                 </div>
                 <div class="card">
                     <img src="assets/project2.jpg" alt="AI Assistant / Chatbots" class="project-image">
                     <h3>AI Assistant / Chatbots</h3>
                     <p><strong>My Role:</strong> Developer</p>
-                    <p>Developed a series of intelligent AI assistants and chatbots for various applications, including customer service and personal productivity. The bots are designed to understand natural language and provide helpful responses.</p>
+                    <p>Developed a series of intelligent AI assistants and chatbots for various applications.</p>
                     <p><strong>Technologies:</strong> Python, TensorFlow, Dialogflow</p>
-                    <a href="https://github.com/jeremysley" class="btn" target="_blank">View on GitHub</a>
+                    <a href="https://github.com/jeremysley" class="btn-primary" target="_blank">View on GitHub</a>
                 </div>
             </div>
         </section>
@@ -85,7 +84,25 @@
     <footer>
         <p>&copy; 2025 Hensley Ukah</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+    <script>
+      tsParticles.load("particles-js", {
+        particles: {
+          number: { value: 70, density: { enable: true, area: 800 } },
+          color: { value: ["#3B82F6", "#10B981", "#FBBF24"] },
+          shape: { type: "circle" },
+          opacity: { value: 0.12, random: false },
+          size: { value: 2, random: true },
+          move: { enable: true, speed: 0.7, direction: "none", outModes: "out" },
+          links: { enable: true, color: "#3B82F6", opacity: 0.05, width: 1 }
+        },
+        interactivity: {
+          detectsOn: "canvas",
+          events: { resize: true }
+        },
+        retina_detect: true
+      });
+    </script>
     <script src="js/main.js"></script>
-    <script src="js/particles-config.js"></script>
 </body>
 </html>

@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Hensley Ukah</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
 </head>
 <body>
     <div id="particles-js"></div>
@@ -21,7 +20,7 @@
         </nav>
     </header>
     <main>
-        <section id="contact" class="content-section">
+        <section id="contact" class="section-card">
             <h1>Contact Me</h1>
             <div class="contact-info">
                 <p><strong>Email:</strong> <a href="mailto:chinonsohensley@gmail.com">chinonsohensley@gmail.com</a></p>
@@ -44,14 +43,32 @@
                     <label for="message">Message</label>
                     <textarea id="message" name="message" rows="5" required></textarea>
                 </div>
-                <button type="submit" class="btn">Send Message</button>
+                <button type="submit" class="btn-primary">Send Message</button>
             </form>
         </section>
     </main>
     <footer>
         <p>&copy; 2025 Hensley Ukah</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+    <script>
+      tsParticles.load("particles-js", {
+        particles: {
+          number: { value: 70, density: { enable: true, area: 800 } },
+          color: { value: ["#3B82F6", "#10B981", "#FBBF24"] },
+          shape: { type: "circle" },
+          opacity: { value: 0.12, random: false },
+          size: { value: 2, random: true },
+          move: { enable: true, speed: 0.7, direction: "none", outModes: "out" },
+          links: { enable: true, color: "#3B82F6", opacity: 0.05, width: 1 }
+        },
+        interactivity: {
+          detectsOn: "canvas",
+          events: { resize: true }
+        },
+        retina_detect: true
+      });
+    </script>
     <script src="js/main.js"></script>
-    <script src="js/particles-config.js"></script>
 </body>
 </html>
