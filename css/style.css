@@ -4,6 +4,7 @@
     --deep-navy-blue: #1E293B;
     --electric-blue: #3B82F6;
     --emerald-green: #10B981;
+    --gold-accent: #F59E0B;
     --light-grey: #F9FAFB;
     --white: #ffffff;
     --dark-grey: #333;
@@ -131,13 +132,13 @@ section:last-of-type {
 
 #hero h1 {
     font-size: 2.5rem;
-    color: var(--white);
+    color: var(--deep-navy-blue);
     margin-bottom: 1rem;
 }
 
 #hero p {
     font-size: 1.2rem;
-    color: var(--light-grey);
+    color: var(--dark-grey);
     margin-bottom: 2rem;
     max-width: 600px;
     margin-left: auto;
@@ -166,16 +167,20 @@ section:last-of-type {
 
 /* Other styles will be updated as needed */
 .card {
-    background-color: rgba(30, 41, 59, 0.75);
+    background-color: var(--white);
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    color: var(--light-grey);
+    color: var(--dark-grey);
 }
 
 .card:hover {
     transform: translateY(-5px);
+}
+
+.card h1, .card h2, .card h3 {
+    color: var(--deep-navy-blue);
 }
 
 .about-image img {
@@ -195,6 +200,11 @@ section:last-of-type {
     display: inline-block;
 }
 
+.blog-posts .card p:first-of-type {
+    font-weight: 500;
+    color: #555;
+}
+
 /* Contact Page */
 .contact-info {
     margin-bottom: 2rem;
@@ -211,7 +221,7 @@ section:last-of-type {
 .social-icon {
     font-size: 2rem;
     margin: 0 0.5rem;
-    color: var(--white);
+    color: var(--deep-navy-blue);
     text-decoration: none;
 }
 
